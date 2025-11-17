@@ -1,0 +1,61 @@
+html,
+body,
+#root {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background: #f6f8fb;
+}
+
+.r-grid {
+  display: grid;
+  gap: 64px;
+  align-items: start;
+}
+
+.r-cols {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.r-inputs {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+
+.r-row {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr;
+}
+
+.lead-email {
+  word-break: break-all;
+}
+
+/* tablet */
+@media (min-width: 720px) {
+
+  .r-row {
+    max-width: 80%
+  }
+  .r-cols {
+    grid-template-columns: 1.1fr 1fr;
+  }
+  .r-inputs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  .r-inputs {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

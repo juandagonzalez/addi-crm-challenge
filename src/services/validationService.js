@@ -1,5 +1,5 @@
-const API_LATENCY_BASE = 2000; // ms
-const API_LATENCY_JITTER = 500; // +/- ms
+const API_LATENCY_BASE = 2000;
+const API_LATENCY_JITTER = 500;
 
 function delay(ms) {
   return new Promise((res) => setTimeout(res, ms));

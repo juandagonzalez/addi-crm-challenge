@@ -15,7 +15,7 @@ describe("useTheme", () => {
 
     rerender();
     const second = result.current;
-    expect(second).toBe(first); // memoized identity
+    expect(second).toBe(first);
   });
 
   test("space function outputs 4px steps", () => {

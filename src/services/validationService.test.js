@@ -18,10 +18,10 @@ describe("validationService", () => {
 
   test("nationalRegistryCheck returns ok given valid lead (ignoring random failure)", async () => {
     const res = await nationalRegistryCheck(lead, {
-      failureRate: 0, // deterministic
+      failureRate: 0,
       latency: [0, 0],
     });
-    // could be false if mismatch triggered; just ensure it returns an object
+
     expect(res).toHaveProperty("ok");
   });
 

@@ -1,4 +1,3 @@
-// src/App.jsx
 import React from "react";
 import MiniCRM from "./app/MiniCRM";
 
